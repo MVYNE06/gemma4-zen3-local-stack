@@ -1,5 +1,7 @@
 # Squeezing Every Drop of Speed Out of a Laptop CPU: Recompiling `ik_llama.cpp` for Gemma 4 E2B + MTP + Pi
 
+> **Read the full write-up on dev.to:** [I Almost Gave Up on Local LLMs on Low-End Hardware—Until I Made These Changes to My Setup](https://dev.to/myne06/i-almost-gave-up-on-local-llms-on-low-end-hardware-until-i-made-these-changes-to-my-setup-2m7n)
+
 After my previous findings, I almost called it quits on running models locally on my hardware: an **AMD Ryzen 5 5625U** with **16 GB dual-channel 3200 MHz RAM**, locked to **"Cool" mode** with max processor state capped at **99%** (~10–12W power limit, no turbo spikes).
 
 Before giving up, I looked into ternary models. I tried running **Ternary Bonsai 2 9B**, and it gave me similar performance to my Qwen 3.5 4B & 2B setup—around **6–10 tokens/sec** (specifically ~6 tok/s on Bonsai). Token generation was still pretty slow. It wasn't horrible, but it wasn't great either.
